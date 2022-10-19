@@ -1,5 +1,6 @@
-import config from "../config";
-import axios from "axios";
+import axios from 'axios';
+
+import config from '../config';
 
 class ApiService {
   constructor() {
@@ -15,22 +16,19 @@ class ApiService {
     const encodedCredentials = btoa(`${this.clientId}:${this.clientSecret}`);
 
     try {
-      const response = await axios.post(
-        `${this.authUrl}`,
-        "grant_type=client_credentials",
-        {
-          headers: {
-            "Content-Type": "application/x-www-form-urlencoded",
-            Authorization: `Basic ${encodedCredentials}`,
-          },
-        }
-      );
+      const response = await axios.post(`${this.authUrl}`, 'grant_type=client_credentials', {
+        headers: {
+          'Content-Type': 'application/x-www-form-urlencoded',
+          Authorization: `Basic ${encodedCredentials}`,
+        },
+      });
 
       const token = response.data.access_token;
 
       return token;
     } catch (e) {
       console.log(e);
+      throw e;
     }
   }
 
@@ -51,14 +49,11 @@ class ApiService {
 
   async fetchPlaylists() {
     try {
-      const { data } = await axios.get(
-        `${this.baseUrl}/browse/featured-playlists`,
-        {
-          headers: {
-            Authorization: `Bearer ${this.token}`,
-          },
-        }
-      );
+      const { data } = await axios.get(`${this.baseUrl}/browse/featured-playlists`, {
+        headers: {
+          Authorization: `Bearer ${this.token}`,
+        },
+      });
 
       return data.playlists;
     } catch (e) {

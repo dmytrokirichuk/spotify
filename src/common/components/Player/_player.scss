@@ -127,7 +127,7 @@
     }
 
     @media only screen and (max-width: 750px) {
-      > svg:not(.fa-ellipsis-h)  {
+      > svg:not(.fa-ellipsis-h) {
         display: none;
         width: 0 !important;
         margin: 0;

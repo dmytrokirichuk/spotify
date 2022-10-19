@@ -1,6 +1,8 @@
-import React, { useEffect, useState } from "react";
-import ApiService from "../api/ApiService";
-import Discover from "./Discover";
+import React, { useEffect, useState } from 'react';
+
+import ApiService from '../api/ApiService';
+
+import Discover from './Discover';
 
 export default function Routes() {
   const [isAuthorized, setIsAuthorized] = useState(false);

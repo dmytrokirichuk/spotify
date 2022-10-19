@@ -1,15 +1,15 @@
-import React from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {
   faStepForward,
   faPlayCircle,
   faStepBackward,
-  faEllipsisH
+  faEllipsisH,
+  faHeart,
+  faRandom,
+  faRetweet,
+  faVolumeDown,
 } from '@fortawesome/free-solid-svg-icons';
-import { faHeart } from '@fortawesome/free-solid-svg-icons';
-import { faRandom } from '@fortawesome/free-solid-svg-icons';
-import { faRetweet } from '@fortawesome/free-solid-svg-icons';
-import { faVolumeDown } from '@fortawesome/free-solid-svg-icons';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import React from 'react';
 import './_player.scss';
 
 export default function Player() {
@@ -17,7 +17,7 @@ export default function Player() {
     <div className="player">
       <div className="player__album">
         <span />
-        <p>Nothing's playing</p>
+        <p>Nothing&apos;s playing</p>
       </div>
       <div className="player__controls">
         <FontAwesomeIcon icon={faStepBackward} />

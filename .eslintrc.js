@@ -10,12 +10,13 @@ module.exports = {
     'plugin:react-hooks/recommended',
     'plugin:import/recommended',
   ],
+  parser: 'babel-eslint',
   parserOptions: {
     ecmaFeatures: {
-      jsx: true,
+      jsx: true
     },
-    ecmaVersion: 'latest',
-    sourceType: 'module',
+    ecmaVersion: 12,
+    sourceType: "module"
   },
   settings: {
     'import/resolver': {
@@ -52,8 +53,6 @@ module.exports = {
       {
         js: 'never',
         jsx: 'never',
-        ts: 'never',
-        tsx: 'never',
       },
     ],
     'import/order': [
