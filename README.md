@@ -6,6 +6,7 @@ Spotify dashboard to test Spotify APIs and handling responses
 
 ![screencast](https://user-images.githubusercontent.com/105731228/196606748-5d20d216-9cc7-40e8-9079-6ccf459e7637.gif)
 
+You can find deployed version at: https://spotify-six-lyart.vercel.app/
 
 ## Get Started
 
@@ -16,7 +17,6 @@ Spotify dashboard to test Spotify APIs and handling responses
 ## Linting
 
 - `yarn prettier` - automatically fixes code style according to prettier rules
-- `yarn lint` - checks for eslint, prettier, and TS errors
-- `yarn lint:js` - runs eslint check
+- `yarn lint` - checks for eslint, prettier
 
 CI/CD pipeline automatically runs linter checks on push.
