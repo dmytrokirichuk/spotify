@@ -1,30 +1,22 @@
-# Spootify Coding Challenge 🎧 
+# Shopify Dashboard
 
-# Goals/Outcomes ✨
-- To test knowledge of consuming APIs and handling responses
-- Loading state and knowing where and how to make multiple API calls efficiently
+Spotify dashboard to test Spotify APIs and handling responses
 
-# Pre-requisites ✅
-- Add your Spotify client ID & secret to a `.env` file in root using the environment variables `REACT_APP_SPOTIFY_CLIENT_ID` and `REACT_APP_SPOTIFY_CLIENT_SECRET`
+## Screencast
 
-# Requirements 📖
-- Fetch and display *Released This Week* songs
-  - Use the API path `new-releases`
-- Fetch and display *Featured Playlists*
-  - Use the API path `featured-playlists`
-- Fetch and display *Browse* genres
-  - Use the API path `categories`
-- Loading state/UI *(optional, current UX is already clean)*
+![screencast](https://user-images.githubusercontent.com/105731228/196606748-5d20d216-9cc7-40e8-9079-6ccf459e7637.gif)
 
-# Think about 💡
-- Taking a look at the Spotify API documentation
-- Do you resolve each API request one after the other or in parallel?
-- Where do you make the API requests?
-- How much logic do you offload out of the UI components?
 
-# What's Already Been Done 🏁
-- UI/UX for all elements, including previews (mobile responsive)
+## Get Started
 
-# Screenshots 🌄
-- desktop: https://puu.sh/GwPLE/3be580156a.png
-- mobile: https://puu.sh/GwPLS/0bcb566d23.png
+1. Install dependencies: `yarn`.
+2. Add the `.env` file and add a variables: `REACT_APP_SPOTIFY_CLIENT_ID` and `REACT_APP_SPOTIFY_CLIENT_SECRET`. You can use `.env.template` as a template.
+3. Run `yarn start` and visit https://localhost:3000.
+
+## Linting
+
+- `yarn prettier` - automatically fixes code style according to prettier rules
+- `yarn lint` - checks for eslint, prettier, and TS errors
+- `yarn lint:js` - runs eslint check
+
+CI/CD pipeline automatically runs linter checks on push.
